@@ -22,8 +22,7 @@ I have basics skills in:
 ##Code example
 Here is my lates work in C++ at my University
 ```c++
-//Программирование с использованием подпрограммы общего вида типа PROCEDURE
-//Сортировка элементов матрицы и вывод их суммы
+//Algorithm for sorting a second-order array and calculating their sums
 #include <iostream>
 #include <math.h>
 #include <iomanip>
@@ -105,4 +104,4 @@ My first self-study project in web-development https://github.com/dyushkin93/rep
 
 
 ##English
-I used to learn English in lyceum and University. I used it while studying and continue on my current job.
+I used to learn English in lyceum and University. I used it while studying and continue on my current job. I got a "pre-intermadiate" rating from an English level test on the British Council website.
