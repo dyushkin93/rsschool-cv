@@ -1,15 +1,16 @@
-Dmitriy Yushkin
+#Dmitriy Yushkin
 
-Contact Info
+##Contact Info
+
 *Tashkent, Uzbekistan*
 *telegram*: [@crusader]http://t.me/crusader
 *e-mail:* [d.yushkin93@gmail.com](mailto:d.yushkin93@gmail.com)
 [github](https://github.com/dyushkin93)
 
-Summary
+##Summary
 I am interested in beginning a career in front-end development. My current goal is to get enough skills of developing websites to start my career from junior front-end developer. For today I have some knowledge in math and computer sciences that should help me to learn faster.
 
-Skills
+##Skills
 I have basics skills in:
 * C++
 * HTML & CSS
@@ -18,7 +19,7 @@ I have basics skills in:
 * OOP
 * BEM
 
-Code example
+##Code example
 Here is my lates work in C++ at my University
 ```c++
 //Программирование с использованием подпрограммы общего вида типа PROCEDURE
@@ -94,14 +95,14 @@ double matr(double **a,const int n,const int m)
 	return **a;
 }
 ```
-Experience
+##Experience
 My first self-study project in web-development https://github.com/dyushkin93/rep_1 (not finished due to lack of motivation).
 
-Education
+##Education
 * 2009-2012 2nd Academic lyceum under the Tashkent University of IT, junior programmer
 * 2012-2016 I.M. Gubkin Russian State University of Oil and Gas, bachelor degree in Petroleum Engineering
 * 2019 Auditor of the health and environmental management system ISO 45001, 14001
 
 
-English
+##English
 I used to learn English in lyceum and University. I used it while studying and continue on my current job.
