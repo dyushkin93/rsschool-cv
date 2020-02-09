@@ -3,12 +3,16 @@ body {
   flex-wrap: wrap;
   justify-content: center;
 }
+
+/* Header section */
+
 header {
   width: 100%;
   position: relative;
   height: 9.625em;
   margin: 0 auto;
-  top: 3.875em;
+  margin-top: 3.875em;
+  margin-bottom: 3.625em;
   background-color: #444341;
 }
 header > .wrapper {
@@ -49,13 +53,106 @@ header > .wrapper {
   text-align: center;
 }
 
+/* Left side section */
+
 aside {
+  box-sizing: border-box;
+  padding-right: 2.4em;
+  padding-left: 5px;
+  border-left: 4px solid #444341;
   width: 230px;
+  color: #353535;
 }
 
+aside a {
+  color: #353535;
+  text-decoration: none;
+}
+
+aside a:hover {
+  text-decoration: underline;
+}
+
+aside h2 {
+  display: flex;
+  align-items: center;
+  padding-bottom: 1em;
+  font: bold 1em "Microsoft YaHei", "Helvetica";
+  text-transform: uppercase;
+}
+
+aside h2::after {
+  content: '';
+  flex: 1;
+  border-bottom: 2px solid #444341;
+  margin-left: .5em;
+  margin-right: .5em;
+}
+
+aside p {
+  padding-bottom: 2.3em;
+  font: .7em "Microsoft YaHei", "Helvetica";
+  text-align: justify;
+}
+
+.contacts,
+.skills {
+  margin-bottom: 2.3rem;
+  font: 400 .8rem "Microsoft YaHei", "Helvetica";
+}
+.contacts li {
+  line-height: 2.5;
+}
+
+.contacts i {
+  font-size: 1.4rem;
+  width: 1.43rem;
+  text-align: center;
+  margin-right: .56rem;
+}
+
+.skills li {
+  margin-left: 20px;
+  line-height: 1.2rem;
+  list-style-type: circle;
+}
+/* Main section */
+
 main {
+  border-left: 3px solid #353535;
+  color: #353535;
   width: 300px;
 }
+
+main h2 {
+  padding-top: 0.5em;
+  padding-bottom: 1.5rem;
+  margin-left: 3.1em;
+  font: 600 1em Arial;
+  text-transform: uppercase;
+}
+
+main li {
+  display: flex;
+  align-items: baseline;
+  padding-bottom: 2.25rem;
+}
+
+.education li {
+  font: 800 .8em Helvetica;
+  text-transform: uppercase;
+}
+
+.experience p {
+  font: 400 .8em "Microsoft YaHei", "Helvetica";
+}
+
+.year {
+  margin: 0 1rem;
+  font: 400 .8rem Arial;
+}
+
+/* Footer section */
 
 footer {
   width: 100%;
