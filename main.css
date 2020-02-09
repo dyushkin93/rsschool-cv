@@ -1,4 +1,10 @@
+body {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
 header {
+  width: 100%;
   position: relative;
   height: 9.625em;
   margin: 0 auto;
@@ -41,4 +47,21 @@ header > .wrapper {
 .photo > span {
   display: none;
   text-align: center;
+}
+
+aside {
+  width: 230px;
+}
+
+main {
+  width: 300px;
+}
+
+footer {
+  width: 100%;
+}
+
+.code-example {
+  width: 530px;
+  margin: 0 auto;
 }
