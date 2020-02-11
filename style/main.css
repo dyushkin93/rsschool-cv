@@ -43,7 +43,7 @@ header > .wrapper {
   width: 200px;
   border: 4px solid #535353;
   border-radius: 100px;
-  background-image: url(./img/profile_pic.jpg);
+  background-image: url(../img/profile_pic.jpg);
 }
 
 .photo > span {
