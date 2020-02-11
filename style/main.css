@@ -1,0 +1,195 @@
+body {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+/* Header section */
+
+header {
+  position: relative;
+  width: 100%;
+  height: 9.625em;
+  margin: 0 auto;
+  margin-top: 3.875em;
+  margin-bottom: 3.625em;
+  background-color: #444341;
+}
+
+header > .wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 530px;
+  height: inherit;
+  margin: 0 auto;
+}
+
+.fullname {
+  box-sizing: border-box;
+  width: 300px;
+  padding-left: 5px;
+}
+
+.fullname > h1 {  
+  font: 600 1.6em "Microsoft YaHey", "Helvetica";
+  text-transform: uppercase;
+  color: white;
+}
+
+.photo {
+  position: relative;
+  height: 200px;
+  width: 200px;
+  border: 4px solid #535353;
+  border-radius: 100px;
+  background-image: url(../img/profile_pic.jpg);
+}
+
+.photo > span {
+  display: none;
+  text-align: center;
+}
+
+/* Left side section */
+
+aside {
+  box-sizing: border-box;
+  width: 230px;
+  padding-right: 2.4em;
+  padding-left: 5px;
+  border-left: 4px solid #444341;
+  color: #353535;
+}
+
+aside a {
+  text-decoration: none;
+  color: #353535;
+}
+
+aside a:hover {
+  text-decoration: underline;
+}
+
+aside h2 {
+  display: flex;
+  align-items: center;
+  padding-bottom: 1em;
+  font: bold 1rem "Microsoft YaHei", "Helvetica";
+  text-transform: uppercase;
+}
+
+aside h2::after {
+  flex: 1;
+  border-bottom: 2px solid #444341;
+  margin-left: .5em;
+  margin-right: .5em;
+  content: '';
+}
+
+aside p {
+  padding-bottom: 2.3em;
+  font: .7em "Microsoft YaHei", "Helvetica";
+  text-align: justify;
+}
+
+.contacts,
+.skills {
+  margin-bottom: 2.3rem;
+  font: 400 .8rem "Microsoft YaHei", "Helvetica";
+}
+
+.contacts li {
+  display: flex;
+  align-items: center;
+  line-height: 2.5;
+}
+
+.contacts i {
+  width: 1.43rem;
+  text-align: center;
+  margin-right: .56rem;
+  font-size: 1.4rem;
+}
+
+.skills li {
+  margin-left: 20px;
+  line-height: 1.2rem;
+  list-style-type: circle;
+}
+/* Main section */
+
+main {
+  width: 300px;
+  border-left: 3px solid #353535;
+  color: #353535;
+}
+
+main h2 {
+  margin-left: 3.1em;
+  padding-top: 0.5em;
+  padding-bottom: 1.5rem;
+  font: 600 1em Arial;
+  text-transform: uppercase;
+}
+
+main li {
+  display: flex;
+  padding-bottom: 2.25rem;
+  align-items: baseline;
+}
+
+.education li {
+  font: 800 .8em Helvetica;
+  text-transform: uppercase;
+}
+
+.experience p {
+  font: 400 .8em "Microsoft YaHei", "Helvetica";
+}
+
+.year {
+  margin: 0 1rem;
+  font: 400 .8rem Arial;
+}
+
+/* Footer section */
+
+footer {
+  width: 100%;
+  margin-top: 1em;
+  margin-bottom: 3rem;
+  font: .8rem "Microsoft YaHei", "Helvetica";
+}
+
+footer h2 {
+  display: flex;
+  align-items: center;
+  margin-bottom: 1em;
+  font: bold 1rem "Microsoft YaHei", "Helvetica";
+  text-transform: uppercase;
+}
+
+footer h2::after {
+  flex: 1;
+  margin-left: .5em;
+  border-bottom: 2px solid #444341;
+  content: '';
+}
+
+.code-example {
+  width: 530px;
+  margin: 0 auto;
+}
+
+pre {
+  margin-top: 1em;
+  padding: 1em;
+  border: 1px solid #444341;
+  border-radius: 7px;
+  font-size: 1.2em;
+  font: 400 1.1em monospace;
+  background-color: #efefef;
+}
+
+

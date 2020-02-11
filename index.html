@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Resume</title>
+  <script src="https://kit.fontawesome.com/f6664f6ace.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="./style/reset.css">
+  <link rel="stylesheet" href="./style/main.css">
+</head>
+<body>
+  <header>
+    <div class="wrapper">
+      <figure class="photo">
+        <span>profile picture</span>
+      </figure>
+      <section class="fullname">
+        <h1>dmitriy yushkin</h1>
+      </section>
+    </div>
+  </header>
+  <aside>
+    <div class="summary">
+      <h2>summary</h2>
+      <p>I am interested in beginning a career in front-end development. My current goal is to get enough skills of developing websites to start my career from junior front-end developer. For today I have some knowledge in math and computer sciences that should help me to learn faster.</p>
+    </div>
+    <div class="contacts">
+      <h2>contacts</h2>
+      <ul>
+        <li><i class="fas fa-map-marker-alt"></i><a href="https://goo.gl/maps/r82V18qGboa1zPoZ8" target="_blank">Tashkent, Uzbekistan</a></li>
+        <li><i class="fab fa-telegram-plane"></i><a href="https://t.me/crusader" target="_blank">@Crusader</a></li>
+        <li><i class="far fa-envelope"></i><a href="mailto:d.yushkin93@gmail.com" target="_blank">d.yushkin93@gmail.com</a></li>
+        <li><i class="fab fa-github"></i><a href="https://github.com/dyushkin93" target="_blank">dyushkin93</a></li>
+      </ul>
+    </div>
+    <div class="skills">
+      <h2>skills</h2>
+      <span>I have basics skills in:</span>
+      <ul>
+        <li>С++</li>
+        <li>HTML & CSS</li>
+        <li>JavaScript</li>
+        <li>Git</li>
+        <li>OOP</li>
+        <li>BEM</li>
+      </ul>
+    </div>
+    <div class="english">
+      <h2>English</h2>
+      <p>I used to learn English in lyceum and University. I used it while studying and continue on my current job. I got a "pre-intermadiate" rating from an English level test on the British Council website.</p>
+    </div>
+  </aside>
+  <main>
+    <section class="education">
+      <h2>education</h2>
+        <ul>
+          <li>
+            <div class="year">2012</div>
+            <div>junior programmer<br>academic lyceum under the tashkent university of IT</div>
+          </li>
+          <li>
+            <div class="year">2016</div>
+            <div>bachelor in petroleum engineering<br>i.m. gubkin russian state University of oil and gas, bachelor degree in petroleum engineering</div>
+          </li>
+          <li>
+            <div class="year">2019</div>
+            <div>auditor<br>management system of the health and environment iso 45001, 14001</div>
+          </li>
+        </ul>
+    </section>
+    <section class="experience">
+      <h2>experience</h2>
+      <ul>
+        <li>
+          <div class="year">2019</div>
+          <p><a href="https://github.com/dyushkin93/rep_1">https://github.com/dyushkin93/rep_1</a><br>My first self-study project in web-development.</p>
+        </li>
+      </ul>
+    </section>
+  </main>
+  <footer>
+    <section class="code-example">
+      <h2>code example</h2>
+      <p>Here is my latest work in C++ at my University</p>
+      <pre>
+//Algorithm for sorting a second-order array and calculating their sums
+#include &lt;iostream&gt;
+#include &lt;math.h&gt;
+#include &lt;iomanip&gt;
+using namespace std;
+double sort(double **a,const int n, const int m);
+double matr(double **a,const int n, const int m);  
+int main()
+{
+  int n, m, c, d;
+  cout &lt;&lt; "\nVvedite kol.strok i stol matritsy A ";
+  cin &gt;&gt; n &gt;&gt; m;
+  cout &lt;&lt; "n=" &lt;&lt; n &lt;&lt;"  "&lt;&lt;" m=" &lt;&lt; m;
+  cout &lt;&lt; "\nVvedite kol.strok i stolb matritsy B ";
+  cin &gt;&gt; c &gt;&gt; d;
+  cout &lt;&lt; "c=" &lt;&lt; c &lt;&lt;" d=" &lt;&lt; d;
+  int i, j;
+  double **a = new double *[n];
+  for (i=0; i&lt; n; i++)
+          a[i]= new double [m];
+  double **b=new double *[c];
+  for (i=0; i&lt; c; i++)
+          b[i] = new double [d];
+  cout &lt;&lt; "\nVvedite matrisu A\n";
+  for(i=0; i&lt; n; i++)
+    for(j=0; j&lt; m; j++)
+      cin &gt;&gt; a[i][j];
+  cout &lt;&lt; "\nVvedite matrisu B\n";
+  for(i=0; i&lt; c; i++)
+    for(j=0; j&lt; d; j++)
+      cin &gt;&gt; b[i][j];
+  cout &lt;&lt; "\n\n";
+  **a = sort(a, n, m);
+  **b = sort(b, c, d);
+  double suma = 0,sumb = 0;
+  for(i=0; i&lt; n; i++)
+    suma += a[i][m-1];
+  for(i=0; i&lt; c; i++)
+    sumb += b[i][d-1];
+  matr(a, n, m);
+  cout &lt;&lt; "\n\n";
+  matr(b, c, d);
+  cout &lt;&lt; "\nsumA=" &lt;&lt; suma &lt;&lt; " sumB=" &lt;&lt; sumb; 
+  system("pause");
+  return 0;
+}
+double sort(double **a, const int n, const int m)
+{
+  int c, i, j, x;
+  for(i=0; i&lt; n; i++)
+    for(x=1; x&lt; m; x++)
+      for(j=0; j&lt; m-x; j++)
+        if (a[i][j] &gt; a[i][j+1])
+        {
+          c = a[i][j];
+          a[i][j] = a[i][j+1];
+          a[i][j+1] = c;
+        }
+  return **a;
+}
+double matr(double **a, const int n, const int m)
+{
+  int i, j;
+  for(i=0; i&lt; n; i++)
+  {
+    for(j=0; j&lt; m; j++)
+      cout &lt;&lt; setw(4) &lt;&lt; a[i][j] &lt;&lt;"   ";
+    cout &lt;&lt; endl;
+  }
+  return **a;
+}
+      </pre> 
+    </section>
+  </footer>
+</body>
+</html>
